@@ -1,0 +1,224 @@
+@charset "UTF-8";
+/* CSS Document*/
+
+html {height:97.5%;}
+
+body {
+    height:97.5%;
+
+}
+
+#page{
+    
+    min-height:100%;
+    position:relative;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#page::after {
+    content: "";
+    opacity: 0.7;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    background-position-y: -103px;
+    background-position-x: -575px;
+    z-index: -1;   
+  }
+
+.logo{
+    height: 150px;
+    float: left;
+    background-image: url(img/logo1y.png);
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position-y: 45px;
+    background-position-x: 15px;
+}
+
+.menu{ 
+    float: left; 
+    padding-top: 50px; 
+    padding-bottom: 50px;
+}
+
+.carregar{
+	background: url(loading.gif);
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 100%;
+	position: absolute;
+	height: 100%;
+	display: none;
+}
+
+.carregar2{
+	background: url(loading.gif);
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 100%;
+	position: absolute;
+	height: 100%;
+    display: none;
+}
+
+.card-container{
+    margin-top: 20px;
+    margin: auto;
+    border: 1px solid rgba(175, 175, 175, 0.589);
+    border-radius: 5px;
+    padding-top: 10px;
+    
+}
+
+.detalhe-container{
+    margin-top: 20px;
+    margin: auto;
+    border: 1px solid rgba(0, 0, 0, 0.589);
+    border-radius: 5px;
+    padding-top: 10px;
+    background: rgba(175, 175, 175, 0.589);
+    
+}
+
+.insere-container{
+    margin-top: 20px;
+    margin: auto;
+    border: 1px solid rgba(0, 0, 0, 0.589);
+    border-radius: 5px;
+    padding-top: 10px;
+    background: rgba(175, 175, 175, 0.589);
+    
+}
+
+.insere{
+    max-width: 1000px;
+    width: 100%;
+    margin: auto;
+    height: 450px;
+}
+
+.card{
+    height: auto;
+    margin: auto;
+    padding: 2px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /* background-color: rgba(182, 110, 69, 0.253); */
+    background-color: rgba(175, 175, 175, 0.589);
+}
+
+.card-img-top{
+    max-width: 400px;
+    max-height: 300px;
+    margin: auto;
+}
+
+
+@media only screen and (max-width: 575px){
+    .title-diminuir{
+    padding-left: 20px;
+    }
+}
+
+.img-top{
+    width: 450px;
+    height: 350px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    margin: auto;
+}
+
+@media only screen and (max-width: 575px){
+    .sm-diminuir{
+    width: 300px;
+    height: 200px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    margin: auto;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .md-diminuir{
+    width: 300px;
+    height: 200px;
+    padding-left: 10px;
+    margin: auto;
+    }
+}
+
+
+.bt-voltar{
+    margin-left: 20px;
+    float: right;
+    padding-bottom: 5px;
+}
+
+.bt-salvar{
+    margin: auto;
+    float: right;
+    padding-bottom: 5px;
+    padding-right: 15px;
+}
+
+.foot-card{
+	padding-bottom: 5px;
+}
+
+.btn-card{
+	padding-left: 5px;
+	padding-right: 0px;
+	float: right;
+    position: relative;
+    margin: auto;
+}
+
+.btn-card2{
+	padding-left: 20px;
+	padding-right: 10px;
+	float: right;
+    position: relative;
+    margin: auto;
+}
+
+.texto{
+    padding-left: 10px;
+}
+
+.fa-star{
+	color: orange;
+	padding-left: 20px;
+    padding-right: 5px;
+    margin: auto;
+}
+
+.id-template{
+	display: none;
+}
+
+.rodape{ 
+    background: #ecc536; 
+    margin-top: 100px; 
+    padding-top: 10px; 
+    padding-bottom: 10px; 
+    text-align: center; 
+    font-size: 100%;
+    width: 100%; 
+    margin: auto;
+  }
+
+  .btn-danger {
+    color: rgb(0, 0, 0);
+    background-color: #ecc536;
+    border-color: #000000;
+}
+
+/* a.nav-link.active.btn-danger {
+    color: rgb(0, 0, 0);
+    background-color: #ecc536;
+    border-color: #000000;
+} */

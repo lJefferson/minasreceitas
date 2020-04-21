@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Minhas Receitas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="estilos.css" rel="stylesheet" type="text/css">
+    <link rel='manifest' href='/manifest.json'>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="inserir.js"></script>	
+    <script src="indexedDb.js"></script>    
+    <script>navigator.serviceWorker.register('/sw.js')</script>
+</head>
+
+<body>
+	
+	<div id="page">
+		<div class="row">
+            
+            <div class="logo col-sm-4 col-md-3 ">
+                
+            </div>
+            
+            <div class="menu col-sm-8 col-md-9 ">
+                <ul class="nav nav-fill">
+                    <li class="nav-item">
+                        <a class="nav-link btn-danger" href="index.html">Receitas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active btn-danger" href="#">Inserir Receita</a>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+        
+        <div class="carregar2"></div>
+        
+        <div id="cards" class="row insere-container">
+            
+            <div class="insere">
+                
+                <h2 class="px-2">Insira Sua Receita!</h2>
+                <br>
+                <div class="input-group mb-3 py-4 px-2">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroup-sizing-default">Titulo:</span>
+                    </div>
+                    <input type="text" class="form-control" aria-label="Sizing example input" id="titulo" aria-describedby="inputGroup-sizing-default">
+                </div>
+                
+                <div class="input-group py-4 px-2">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Receita</span>
+                    </div>
+                    <textarea class="form-control" id="receita" aria-label="With textarea"></textarea>
+                </div>
+                
+                <div class='bt-salvar'>
+                    <a id="inserir" class='btn btn-success' onclick="inserir()">Inserir</a>
+                </div>
+                
+                <div class='bt-voltar px-2'>
+                    <a class='btn btn-danger'  href='index.html'>Voltar</a>
+                </div>
+                
+            </div>
+        </div>
+        
+        
+    </div>
+    
+    <div class="rodape col-md-12">
+        Copyright 2020 - Todos os direitos reservados.
+    </div>
+</body>
+</html>
