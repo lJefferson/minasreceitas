@@ -1,0 +1,993 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DecisionTree type="arvore1">
+	<Test attribute="PLANO_SAUDE" operator="=" value="1">
+		<Test attribute="TRABALHA" operator="=" value="1">
+			<Output decision="1" info="(135.0/25.0)"/>
+		</Test>
+		<Test attribute="TRABALHA" operator="=" value="2">
+			<Test attribute="ESCOLARIDADE" operator="=" value="1">
+				<Test attribute="DX_ATV_HABITUAL_SAUDE" operator="=" value="1">
+					<Output decision="1" info="(45.0/10.0)"/>
+				</Test>
+				<Test attribute="DX_ATV_HABITUAL_SAUDE" operator="=" value="2">
+					<Test attribute="PESO" operator="=" value="1">
+						<Output decision="2" info="(15.0/4.0)"/>
+					</Test>
+					<Test attribute="PESO" operator="=" value="2">
+						<Test attribute="SEXO" operator="=" value="1">
+							<Test attribute="BEBIDA_ALCOOLICA"
+							 operator="=" value="1">
+							 <Test
+							 attribute="PARENTES_CONFIA"
+							 operator="=" value="1">
+							 <Output decision="2" info="(0.0)"/>
+							 </Test>
+							 <Test
+							 attribute="PARENTES_CONFIA"
+							 operator="=" value="2">
+							 <Output decision="1" info="(2.0)"/>
+							 </Test>
+							 <Test
+							 attribute="PARENTES_CONFIA"
+							 operator="=" value="3">
+							 <Output decision="2" info="(5.0/1.0)"/>
+							 </Test>
+							</Test>
+							<Test attribute="BEBIDA_ALCOOLICA"
+							 operator="=" value="2">
+							 <Output decision="2" info="(6.0)"/>
+							</Test>
+						</Test>
+						<Test attribute="SEXO" operator="=" value="2">
+							<Test attribute="BEBIDA_ALCOOLICA"
+							 operator="=" value="1">
+							 <Output decision="2" info="(8.0/2.0)"/>
+							</Test>
+							<Test attribute="BEBIDA_ALCOOLICA"
+							 operator="=" value="2">
+							 <Test
+							 attribute="EXERCICIO_FISICO"
+							 operator="=" value="1">
+							 <Output decision="2" info="(19.0/7.0)"/>
+							 </Test>
+							 <Test
+							 attribute="EXERCICIO_FISICO"
+							 operator="=" value="2">
+							 <Output decision="1" info="(48.0/12.0)"/>
+							 </Test>
+							</Test>
+						</Test>
+					</Test>
+					<Test attribute="PESO" operator="=" value="3">
+						<Test attribute="EXERCICIO_FISICO"
+							operator="=" value="1">
+							<Test attribute="IDADE" operator="=" value="1">
+							 <Output decision="1" info="(5.0)"/>
+							</Test>
+							<Test attribute="IDADE" operator="=" value="2">
+							 <Output decision="1" info="(8.0/1.0)"/>
+							</Test>
+							<Test attribute="IDADE" operator="=" value="3">
+							 <Output decision="2" info="(2.0)"/>
+							</Test>
+							<Test attribute="IDADE" operator="=" value="4">
+							 <Output decision="1" info="(0.0)"/>
+							</Test>
+						</Test>
+						<Test attribute="EXERCICIO_FISICO"
+							operator="=" value="2">
+							<Test attribute="ESTADO_SAUDE"
+							 operator="=" value="1">
+							 <Test attribute="IDADE"
+							 operator="=" value="1">
+							 <Output decision="2" info="(6.0/1.0)"/>
+							 </Test>
+							 <Test attribute="IDADE"
+							 operator="=" value="2">
+							 <Output decision="1" info="(10.0/3.0)"/>
+							 </Test>
+							 <Test attribute="IDADE"
+							 operator="=" value="3">
+							 <Output decision="2" info="(4.0)"/>
+							 </Test>
+							 <Test attribute="IDADE"
+							 operator="=" value="4">
+							 <Output decision="1" info="(1.0)"/>
+							 </Test>
+							</Test>
+							<Test attribute="ESTADO_SAUDE"
+							 operator="=" value="2">
+							 <Output decision="1" info="(30.0/10.0)"/>
+							</Test>
+							<Test attribute="ESTADO_SAUDE"
+							 operator="=" value="3">
+							 <Output decision="2" info="(5.0/1.0)"/>
+							</Test>
+						</Test>
+					</Test>
+					<Test attribute="PESO" operator="=" value="4">
+						<Output decision="1" info="(14.0/2.0)"/>
+					</Test>
+				</Test>
+			</Test>
+			<Test attribute="ESCOLARIDADE" operator="=" value="2">
+				<Test attribute="SEXO" operator="=" value="1">
+					<Test attribute="BEBIDA_ALCOOLICA" operator="=" value="1">
+						<Output decision="1" info="(5.0/1.0)"/>
+					</Test>
+					<Test attribute="BEBIDA_ALCOOLICA" operator="=" value="2">
+						<Test attribute="DX_ATV_HABITUAL_SAUDE"
+							operator="=" value="1">
+							<Output decision="1" info="(4.0/1.0)"/>
+						</Test>
+						<Test attribute="DX_ATV_HABITUAL_SAUDE"
+							operator="=" value="2">
+							<Output decision="2" info="(17.0/6.0)"/>
+						</Test>
+					</Test>
+				</Test>
+				<Test attribute="SEXO" operator="=" value="2">
+					<Test attribute="NUMERO_DOENCAS_CRITICAS"
+						operator="=" value="1">
+						<Output decision="1" info="(9.0/3.0)"/>
+					</Test>
+					<Test attribute="NUMERO_DOENCAS_CRITICAS"
+						operator="=" value="2">
+						<Output decision="1" info="(19.0/1.0)"/>
+					</Test>
+					<Test attribute="NUMERO_DOENCAS_CRITICAS"
+						operator="=" value="3">
+						<Test attribute="EXERCICIO_FISICO"
+							operator="=" value="1">
+							<Output decision="2" info="(11.0/3.0)"/>
+						</Test>
+						<Test attribute="EXERCICIO_FISICO"
+							operator="=" value="2">
+							<Test attribute="TELEVISAO"
+							 operator="=" value="1">
+							 <Output decision="2" info="(1.0)"/>
+							</Test>
+							<Test attribute="TELEVISAO"
+							 operator="=" value="2">
+							 <Output decision="1" info="(9.0)"/>
+							</Test>
+							<Test attribute="TELEVISAO"
+							 operator="=" value="3">
+							 <Output decision="2" info="(4.0/1.0)"/>
+							</Test>
+						</Test>
+					</Test>
+					<Test attribute="NUMERO_DOENCAS_CRITICAS"
+						operator="=" value="4">
+						<Test attribute="PESO" operator="=" value="1">
+							<Output decision="1" info="(0.0)"/>
+						</Test>
+						<Test attribute="PESO" operator="=" value="2">
+							<Output decision="1" info="(20.0/2.0)"/>
+						</Test>
+						<Test attribute="PESO" operator="=" value="3">
+							<Test
+							 attribute="DX_ATV_HABITUAL_SAUDE"
+							 operator="=" value="1">
+							 <Output decision="1" info="(2.0)"/>
+							</Test>
+							<Test
+							 attribute="DX_ATV_HABITUAL_SAUDE"
+							 operator="=" value="2">
+							 <Output decision="2" info="(2.0)"/>
+							</Test>
+						</Test>
+						<Test attribute="PESO" operator="=" value="4">
+							<Output decision="2" info="(1.0)"/>
+						</Test>
+					</Test>
+				</Test>
+			</Test>
+			<Test attribute="ESCOLARIDADE" operator="=" value="3">
+				<Output decision="1" info="(121.0/28.0)"/>
+			</Test>
+		</Test>
+	</Test>
+	<Test attribute="PLANO_SAUDE" operator="=" value="2">
+		<Test attribute="ESCOLARIDADE" operator="=" value="1">
+			<Test attribute="TRABALHA" operator="=" value="1">
+				<Test attribute="PARENTES_CONFIA" operator="=" value="1">
+					<Test attribute="NUMERO_DOENCAS_CRITICAS"
+						operator="=" value="1">
+						<Test attribute="SEXO" operator="=" value="1">
+							<Test attribute="ESTADO_SAUDE"
+							 operator="=" value="1">
+							 <Test attribute="TELEVISAO"
+							 operator="=" value="1">
+							 <Output decision="2" info="(3.0)"/>
+							 </Test>
+							 <Test attribute="TELEVISAO"
+							 operator="=" value="2">
+							 <Output decision="1" info="(15.0/5.0)"/>
+							 </Test>
+							 <Test attribute="TELEVISAO"
+							 operator="=" value="3">
+							 <Output decision="2" info="(1.0)"/>
+							 </Test>
+							</Test>
+							<Test attribute="ESTADO_SAUDE"
+							 operator="=" value="2">
+							 <Test attribute="AMIGOS_CONFIA"
+							 operator="=" value="1">
+							 <Test attribute="IDADE"
+							 operator="=" value="1">
+							 <Output decision="2" info="(6.0/1.0)"/>
+							 </Test>
+							 <Test attribute="IDADE"
+							 operator="=" value="2">
+							 <Output decision="1" info="(5.0/1.0)"/>
+							 </Test>
+							 <Test attribute="IDADE"
+							 operator="=" value="3">
+							 <Output decision="2" info="(0.0)"/>
+							 </Test>
+							 <Test attribute="IDADE"
+							 operator="=" value="4">
+							 <Output decision="2" info="(0.0)"/>
+							 </Test>
+							 </Test>
+							 <Test attribute="AMIGOS_CONFIA"
+							 operator="=" value="2">
+							 <Output decision="2" info="(7.0/1.0)"/>
+							 </Test>
+							 <Test attribute="AMIGOS_CONFIA"
+							 operator="=" value="3">
+							 <Output decision="2" info="(0.0)"/>
+							 </Test>
+							</Test>
+							<Test attribute="ESTADO_SAUDE"
+							 operator="=" value="3">
+							 <Output decision="1" info="(3.0)"/>
+							</Test>
+						</Test>
+						<Test attribute="SEXO" operator="=" value="2">
+							<Test attribute="BEBIDA_ALCOOLICA"
+							 operator="=" value="1">
+							 <Output decision="2" info="(3.0/1.0)"/>
+							</Test>
+							<Test attribute="BEBIDA_ALCOOLICA"
+							 operator="=" value="2">
+							 <Output decision="1" info="(21.0/3.0)"/>
+							</Test>
+						</Test>
+					</Test>
+					<Test attribute="NUMERO_DOENCAS_CRITICAS"
+						operator="=" value="2">
+						<Test attribute="DX_ATV_HABITUAL_SAUDE"
+							operator="=" value="1">
+							<Output decision="1" info="(5.0/1.0)"/>
+						</Test>
+						<Test attribute="DX_ATV_HABITUAL_SAUDE"
+							operator="=" value="2">
+							<Output decision="2" info="(26.0/7.0)"/>
+						</Test>
+					</Test>
+					<Test attribute="NUMERO_DOENCAS_CRITICAS"
+						operator="=" value="3">
+						<Test attribute="CONJUGE" operator="=" value="1">
+							<Output decision="2" info="(11.0/1.0)"/>
+						</Test>
+						<Test attribute="CONJUGE" operator="=" value="2">
+							<Test attribute="TELEVISAO"
+							 operator="=" value="1">
+							 <Output decision="1" info="(6.0/1.0)"/>
+							</Test>
+							<Test attribute="TELEVISAO"
+							 operator="=" value="2">
+							 <Test
+							 attribute="EXERCICIO_FISICO"
+							 operator="=" value="1">
+							 <Output decision="1" info="(3.0/1.0)"/>
+							 </Test>
+							 <Test
+							 attribute="EXERCICIO_FISICO"
+							 operator="=" value="2">
+							 <Output decision="2" info="(4.0)"/>
+							 </Test>
+							</Test>
+							<Test attribute="TELEVISAO"
+							 operator="=" value="3">
+							 <Output decision="2" info="(2.0)"/>
+							</Test>
+						</Test>
+					</Test>
+					<Test attribute="NUMERO_DOENCAS_CRITICAS"
+						operator="=" value="4">
+						<Output decision="1" info="(28.0)"/>
+					</Test>
+				</Test>
+				<Test attribute="PARENTES_CONFIA" operator="=" value="2">
+					<Output decision="1" info="(5.0)"/>
+				</Test>
+				<Test attribute="PARENTES_CONFIA" operator="=" value="3">
+					<Output decision="2" info="(11.0/2.0)"/>
+				</Test>
+			</Test>
+			<Test attribute="TRABALHA" operator="=" value="2">
+				<Test attribute="MEDICAMENTO_DORMIR" operator="=" value="1">
+					<Test attribute="AUTO_AV_SAUDE" operator="=" value="1">
+						<Test attribute="DX_ATV_HABITUAL_SAUDE"
+							operator="=" value="1">
+							<Test attribute="CONJUGE"
+							 operator="=" value="1">
+							 <Output decision="1" info="(2.0)"/>
+							</Test>
+							<Test attribute="CONJUGE"
+							 operator="=" value="2">
+							 <Output decision="2" info="(3.0)"/>
+							</Test>
+						</Test>
+						<Test attribute="DX_ATV_HABITUAL_SAUDE"
+							operator="=" value="2">
+							<Test attribute="TELEVISAO"
+							 operator="=" value="1">
+							 <Test
+							 attribute="DIAGN_DOEN_LIMIT"
+							 operator="=" value="1">
+							 <Output decision="1" info="(0.0)"/>
+							 </Test>
+							 <Test
+							 attribute="DIAGN_DOEN_LIMIT"
+							 operator="=" value="2">
+							 <Output decision="1" info="(2.0)"/>
+							 </Test>
+							 <Test
+							 attribute="DIAGN_DOEN_LIMIT"
+							 operator="=" value="3">
+							 <Output decision="2" info="(4.0/1.0)"/>
+							 </Test>
+							</Test>
+							<Test attribute="TELEVISAO"
+							 operator="=" value="2">
+							 <Output decision="1" info="(17.0/4.0)"/>
+							</Test>
+							<Test attribute="TELEVISAO"
+							 operator="=" value="3">
+							 <Test attribute="IDADE"
+							 operator="=" value="1">
+							 <Output decision="2" info="(3.0)"/>
+							 </Test>
+							 <Test attribute="IDADE"
+							 operator="=" value="2">
+							 <Output decision="1" info="(3.0)"/>
+							 </Test>
+							 <Test attribute="IDADE"
+							 operator="=" value="3">
+							 <Output decision="1" info="(0.0)"/>
+							 </Test>
+							 <Test attribute="IDADE"
+							 operator="=" value="4">
+							 <Output decision="1" info="(0.0)"/>
+							 </Test>
+							</Test>
+						</Test>
+					</Test>
+					<Test attribute="AUTO_AV_SAUDE" operator="=" value="2">
+						<Test attribute="CONJUGE" operator="=" value="1">
+							<Test attribute="BEBIDA_ALCOOLICA"
+							 operator="=" value="1">
+							 <Output decision="2" info="(3.0)"/>
+							</Test>
+							<Test attribute="BEBIDA_ALCOOLICA"
+							 operator="=" value="2">
+							 <Test
+							 attribute="NUMERO_DOENCAS_CRITICAS"
+							 operator="=" value="1">
+							 <Output decision="1" info="(0.0)"/>
+							 </Test>
+							 <Test
+							 attribute="NUMERO_DOENCAS_CRITICAS"
+							 operator="=" value="2">
+							 <Test attribute="PESO"
+							 operator="=" value="1">
+							 <Output decision="1" info="(2.0)"/>
+							 </Test>
+							 <Test attribute="PESO"
+							 operator="=" value="2">
+							 <Output decision="2" info="(6.0/2.0)"/>
+							 </Test>
+							 <Test attribute="PESO"
+							 operator="=" value="3">
+							 <Output decision="2" info="(3.0)"/>
+							 </Test>
+							 <Test attribute="PESO"
+							 operator="=" value="4">
+							 <Output decision="2" info="(0.0)"/>
+							 </Test>
+							 </Test>
+							 <Test
+							 attribute="NUMERO_DOENCAS_CRITICAS"
+							 operator="=" value="3">
+							 <Output decision="1" info="(14.0/5.0)"/>
+							 </Test>
+							 <Test
+							 attribute="NUMERO_DOENCAS_CRITICAS"
+							 operator="=" value="4">
+							 <Output decision="1" info="(13.0/2.0)"/>
+							 </Test>
+							</Test>
+						</Test>
+						<Test attribute="CONJUGE" operator="=" value="2">
+							<Output decision="2" info="(62.0/20.0)"/>
+						</Test>
+					</Test>
+					<Test attribute="AUTO_AV_SAUDE" operator="=" value="3">
+						<Test attribute="BEBIDA_ALCOOLICA"
+							operator="=" value="1">
+							<Output decision="1" info="(6.0)"/>
+						</Test>
+						<Test attribute="BEBIDA_ALCOOLICA"
+							operator="=" value="2">
+							<Test
+							 attribute="DX_ATV_HABITUAL_SAUDE"
+							 operator="=" value="1">
+							 <Output decision="1" info="(39.0/11.0)"/>
+							</Test>
+							<Test
+							 attribute="DX_ATV_HABITUAL_SAUDE"
+							 operator="=" value="2">
+							 <Test attribute="AMIGOS_CONFIA"
+							 operator="=" value="1">
+							 <Test attribute="CONJUGE"
+							 operator="=" value="1">
+							 <Test
+							 attribute="DIAGN_DOEN_LIMIT"
+							 operator="=" value="1">
+							 <Output
+							 decision="2" info="(2.0)"/>
+							 </Test>
+							 <Test
+							 attribute="DIAGN_DOEN_LIMIT"
+							 operator="=" value="2">
+							 <Output
+							 decision="1" info="(0.0)"/>
+							 </Test>
+							 <Test
+							 attribute="DIAGN_DOEN_LIMIT"
+							 operator="=" value="3">
+							 <Output
+							 decision="1" info="(2.0)"/>
+							 </Test>
+							 </Test>
+							 <Test attribute="CONJUGE"
+							 operator="=" value="2">
+							 <Output decision="1" info="(6.0)"/>
+							 </Test>
+							 </Test>
+							 <Test attribute="AMIGOS_CONFIA"
+							 operator="=" value="2">
+							 <Output decision="2" info="(18.0/4.0)"/>
+							 </Test>
+							 <Test attribute="AMIGOS_CONFIA"
+							 operator="=" value="3">
+							 <Test attribute="TELEVISAO"
+							 operator="=" value="1">
+							 <Output decision="2" info="(2.0)"/>
+							 </Test>
+							 <Test attribute="TELEVISAO"
+							 operator="=" value="2">
+							 <Output decision="1" info="(5.0)"/>
+							 </Test>
+							 <Test attribute="TELEVISAO"
+							 operator="=" value="3">
+							 <Output decision="2" info="(1.0)"/>
+							 </Test>
+							 </Test>
+							</Test>
+						</Test>
+					</Test>
+				</Test>
+				<Test attribute="MEDICAMENTO_DORMIR" operator="=" value="2">
+					<Test attribute="PESO" operator="=" value="1">
+						<Test attribute="DIAGN_DOEN_LIMIT"
+							operator="=" value="1">
+							<Test attribute="ESTADO_SAUDE"
+							 operator="=" value="1">
+							 <Output decision="2" info="(0.0)"/>
+							</Test>
+							<Test attribute="ESTADO_SAUDE"
+							 operator="=" value="2">
+							 <Output decision="1" info="(6.0/1.0)"/>
+							</Test>
+							<Test attribute="ESTADO_SAUDE"
+							 operator="=" value="3">
+							 <Output decision="2" info="(7.0)"/>
+							</Test>
+						</Test>
+						<Test attribute="DIAGN_DOEN_LIMIT"
+							operator="=" value="2">
+							<Test attribute="PARENTES_CONFIA"
+							 operator="=" value="1">
+							 <Output decision="1" info="(2.0)"/>
+							</Test>
+							<Test attribute="PARENTES_CONFIA"
+							 operator="=" value="2">
+							 <Output decision="2" info="(6.0/1.0)"/>
+							</Test>
+							<Test attribute="PARENTES_CONFIA"
+							 operator="=" value="3">
+							 <Output decision="2" info="(1.0)"/>
+							</Test>
+						</Test>
+						<Test attribute="DIAGN_DOEN_LIMIT"
+							operator="=" value="3">
+							<Output decision="2" info="(35.0/5.0)"/>
+						</Test>
+					</Test>
+					<Test attribute="PESO" operator="=" value="2">
+						<Test attribute="NUMERO_DOENCAS_CRITICAS"
+							operator="=" value="1">
+							<Test attribute="PARENTES_CONFIA"
+							 operator="=" value="1">
+							 <Output decision="2" info="(12.0/1.0)"/>
+							</Test>
+							<Test attribute="PARENTES_CONFIA"
+							 operator="=" value="2">
+							 <Test attribute="TELEVISAO"
+							 operator="=" value="1">
+							 <Output decision="2" info="(13.0/4.0)"/>
+							 </Test>
+							 <Test attribute="TELEVISAO"
+							 operator="=" value="2">
+							 <Output decision="2" info="(2.0)"/>
+							 </Test>
+							 <Test attribute="TELEVISAO"
+							 operator="=" value="3">
+							 <Output decision="1" info="(5.0)"/>
+							 </Test>
+							</Test>
+							<Test attribute="PARENTES_CONFIA"
+							 operator="=" value="3">
+							 <Output decision="2" info="(16.0)"/>
+							</Test>
+						</Test>
+						<Test attribute="NUMERO_DOENCAS_CRITICAS"
+							operator="=" value="2">
+							<Test attribute="PARENTES_CONFIA"
+							 operator="=" value="1">
+							 <Output decision="2" info="(10.0)"/>
+							</Test>
+							<Test attribute="PARENTES_CONFIA"
+							 operator="=" value="2">
+							 <Test attribute="TELEVISAO"
+							 operator="=" value="1">
+							 <Output decision="2" info="(12.0/2.0)"/>
+							 </Test>
+							 <Test attribute="TELEVISAO"
+							 operator="=" value="2">
+							 <Test
+							 attribute="BEBIDA_ALCOOLICA"
+							 operator="=" value="1">
+							 <Output decision="2" info="(6.0/1.0)"/>
+							 </Test>
+							 <Test
+							 attribute="BEBIDA_ALCOOLICA"
+							 operator="=" value="2">
+							 <Test
+							 attribute="IDADE"
+							 operator="=" value="1">
+							 <Output
+							 decision="2" info="(7.0/2.0)"/>
+							 </Test>
+							 <Test
+							 attribute="IDADE"
+							 operator="=" value="2">
+							 <Output
+							 decision="1" info="(14.0/4.0)"/>
+							 </Test>
+							 <Test
+							 attribute="IDADE"
+							 operator="=" value="3">
+							 <Test
+							 attribute="ESTADO_SAUDE"
+							 operator="=" value="1">
+							 <Output
+							 decision="1" info="(3.0)"/>
+							 </Test>
+							 <Test
+							 attribute="ESTADO_SAUDE"
+							 operator="=" value="2">
+							 <Output
+							 decision="2" info="(2.0)"/>
+							 </Test>
+							 <Test
+							 attribute="ESTADO_SAUDE"
+							 operator="=" value="3">
+							 <Output
+							 decision="2" info="(1.0)"/>
+							 </Test>
+							 </Test>
+							 <Test
+							 attribute="IDADE"
+							 operator="=" value="4">
+							 <Output
+							 decision="2" info="(1.0)"/>
+							 </Test>
+							 </Test>
+							 </Test>
+							 <Test attribute="TELEVISAO"
+							 operator="=" value="3">
+							 <Output decision="2" info="(11.0/1.0)"/>
+							 </Test>
+							</Test>
+							<Test attribute="PARENTES_CONFIA"
+							 operator="=" value="3">
+							 <Test attribute="IDADE"
+							 operator="=" value="1">
+							 <Test
+							 attribute="DX_ATV_HABITUAL_SAUDE"
+							 operator="=" value="1">
+							 <Output decision="1" info="(2.0)"/>
+							 </Test>
+							 <Test
+							 attribute="DX_ATV_HABITUAL_SAUDE"
+							 operator="=" value="2">
+							 <Output decision="2" info="(12.0/3.0)"/>
+							 </Test>
+							 </Test>
+							 <Test attribute="IDADE"
+							 operator="=" value="2">
+							 <Test attribute="CONJUGE"
+							 operator="=" value="1">
+							 <Output decision="1" info="(6.0/1.0)"/>
+							 </Test>
+							 <Test attribute="CONJUGE"
+							 operator="=" value="2">
+							 <Output decision="2" info="(8.0/1.0)"/>
+							 </Test>
+							 </Test>
+							 <Test attribute="IDADE"
+							 operator="=" value="3">
+							 <Output decision="1" info="(7.0/1.0)"/>
+							 </Test>
+							 <Test attribute="IDADE"
+							 operator="=" value="4">
+							 <Output decision="2" info="(5.0/1.0)"/>
+							 </Test>
+							</Test>
+						</Test>
+						<Test attribute="NUMERO_DOENCAS_CRITICAS"
+							operator="=" value="3">
+							<Test attribute="PARENTES_CONFIA"
+							 operator="=" value="1">
+							 <Test attribute="TELEVISAO"
+							 operator="=" value="1">
+							 <Test attribute="SEXO"
+							 operator="=" value="1">
+							 <Output decision="2" info="(3.0/1.0)"/>
+							 </Test>
+							 <Test attribute="SEXO"
+							 operator="=" value="2">
+							 <Output decision="1" info="(3.0)"/>
+							 </Test>
+							 </Test>
+							 <Test attribute="TELEVISAO"
+							 operator="=" value="2">
+							 <Output decision="1" info="(10.0/4.0)"/>
+							 </Test>
+							 <Test attribute="TELEVISAO"
+							 operator="=" value="3">
+							 <Output decision="2" info="(8.0)"/>
+							 </Test>
+							</Test>
+							<Test attribute="PARENTES_CONFIA"
+							 operator="=" value="2">
+							 <Output decision="1" info="(32.0/9.0)"/>
+							</Test>
+							<Test attribute="PARENTES_CONFIA"
+							 operator="=" value="3">
+							 <Output decision="2" info="(15.0/3.0)"/>
+							</Test>
+						</Test>
+						<Test attribute="NUMERO_DOENCAS_CRITICAS"
+							operator="=" value="4">
+							<Test attribute="TELEVISAO"
+							 operator="=" value="1">
+							 <Output decision="2" info="(10.0/1.0)"/>
+							</Test>
+							<Test attribute="TELEVISAO"
+							 operator="=" value="2">
+							 <Output decision="2" info="(28.0/7.0)"/>
+							</Test>
+							<Test attribute="TELEVISAO"
+							 operator="=" value="3">
+							 <Test
+							 attribute="DIAGN_DOEN_LIMIT"
+							 operator="=" value="1">
+							 <Output decision="1" info="(4.0/1.0)"/>
+							 </Test>
+							 <Test
+							 attribute="DIAGN_DOEN_LIMIT"
+							 operator="=" value="2">
+							 <Output decision="1" info="(3.0)"/>
+							 </Test>
+							 <Test
+							 attribute="DIAGN_DOEN_LIMIT"
+							 operator="=" value="3">
+							 <Output decision="2" info="(4.0/1.0)"/>
+							 </Test>
+							</Test>
+						</Test>
+					</Test>
+					<Test attribute="PESO" operator="=" value="3">
+						<Test attribute="BEBIDA_ALCOOLICA"
+							operator="=" value="1">
+							<Test attribute="TELEVISAO"
+							 operator="=" value="1">
+							 <Output decision="1" info="(5.0/1.0)"/>
+							</Test>
+							<Test attribute="TELEVISAO"
+							 operator="=" value="2">
+							 <Output decision="1" info="(25.0/7.0)"/>
+							</Test>
+							<Test attribute="TELEVISAO"
+							 operator="=" value="3">
+							 <Output decision="2" info="(8.0/1.0)"/>
+							</Test>
+						</Test>
+						<Test attribute="BEBIDA_ALCOOLICA"
+							operator="=" value="2">
+							<Test attribute="IDADE" operator="=" value="1">
+							 <Output decision="2" info="(54.0/15.0)"/>
+							</Test>
+							<Test attribute="IDADE" operator="=" value="2">
+							 <Test
+							 attribute="EXERCICIO_FISICO"
+							 operator="=" value="1">
+							 <Test
+							 attribute="PARENTES_CONFIA"
+							 operator="=" value="1">
+							 <Output decision="2" info="(2.0)"/>
+							 </Test>
+							 <Test
+							 attribute="PARENTES_CONFIA"
+							 operator="=" value="2">
+							 <Test attribute="SEXO"
+							 operator="=" value="1">
+							 <Output
+							 decision="2" info="(2.0)"/>
+							 </Test>
+							 <Test attribute="SEXO"
+							 operator="=" value="2">
+							 <Output
+							 decision="1" info="(6.0/1.0)"/>
+							 </Test>
+							 </Test>
+							 <Test
+							 attribute="PARENTES_CONFIA"
+							 operator="=" value="3">
+							 <Output decision="1" info="(3.0)"/>
+							 </Test>
+							 </Test>
+							 <Test
+							 attribute="EXERCICIO_FISICO"
+							 operator="=" value="2">
+							 <Test
+							 attribute="ESTADO_SAUDE"
+							 operator="=" value="1">
+							 <Output decision="2" info="(16.0/4.0)"/>
+							 </Test>
+							 <Test
+							 attribute="ESTADO_SAUDE"
+							 operator="=" value="2">
+							 <Test
+							 attribute="NUMERO_DOENCAS_CRITICAS"
+							 operator="=" value="1">
+							 <Test
+							 attribute="PARENTES_CONFIA"
+							 operator="=" value="1">
+							 <Output
+							 decision="1" info="(4.0/1.0)"/>
+							 </Test>
+							 <Test
+							 attribute="PARENTES_CONFIA"
+							 operator="=" value="2">
+							 <Output
+							 decision="2" info="(1.0)"/>
+							 </Test>
+							 <Test
+							 attribute="PARENTES_CONFIA"
+							 operator="=" value="3">
+							 <Output
+							 decision="2" info="(2.0)"/>
+							 </Test>
+							 </Test>
+							 <Test
+							 attribute="NUMERO_DOENCAS_CRITICAS"
+							 operator="=" value="2">
+							 <Output
+							 decision="2" info="(8.0/2.0)"/>
+							 </Test>
+							 <Test
+							 attribute="NUMERO_DOENCAS_CRITICAS"
+							 operator="=" value="3">
+							 <Output
+							 decision="1" info="(9.0/3.0)"/>
+							 </Test>
+							 <Test
+							 attribute="NUMERO_DOENCAS_CRITICAS"
+							 operator="=" value="4">
+							 <Test
+							 attribute="DX_ATV_HABITUAL_SAUDE"
+							 operator="=" value="1">
+							 <Output
+							 decision="1" info="(2.0)"/>
+							 </Test>
+							 <Test
+							 attribute="DX_ATV_HABITUAL_SAUDE"
+							 operator="=" value="2">
+							 <Output
+							 decision="2" info="(5.0)"/>
+							 </Test>
+							 </Test>
+							 </Test>
+							 <Test
+							 attribute="ESTADO_SAUDE"
+							 operator="=" value="3">
+							 <Test
+							 attribute="PARENTES_CONFIA"
+							 operator="=" value="1">
+							 <Output
+							 decision="1" info="(2.0)"/>
+							 </Test>
+							 <Test
+							 attribute="PARENTES_CONFIA"
+							 operator="=" value="2">
+							 <Output
+							 decision="2" info="(4.0/1.0)"/>
+							 </Test>
+							 <Test
+							 attribute="PARENTES_CONFIA"
+							 operator="=" value="3">
+							 <Output
+							 decision="1" info="(1.0)"/>
+							 </Test>
+							 </Test>
+							 </Test>
+							</Test>
+							<Test attribute="IDADE" operator="=" value="3">
+							 <Test attribute="CONJUGE"
+							 operator="=" value="1">
+							 <Output decision="1" info="(3.0)"/>
+							 </Test>
+							 <Test attribute="CONJUGE"
+							 operator="=" value="2">
+							 <Output decision="2" info="(4.0/1.0)"/>
+							 </Test>
+							</Test>
+							<Test attribute="IDADE" operator="=" value="4">
+							 <Test
+							 attribute="DIAGN_DOEN_LIMIT"
+							 operator="=" value="1">
+							 <Output decision="1" info="(2.0)"/>
+							 </Test>
+							 <Test
+							 attribute="DIAGN_DOEN_LIMIT"
+							 operator="=" value="2">
+							 <Output decision="1" info="(1.0)"/>
+							 </Test>
+							 <Test
+							 attribute="DIAGN_DOEN_LIMIT"
+							 operator="=" value="3">
+							 <Output decision="2" info="(2.0)"/>
+							 </Test>
+							</Test>
+						</Test>
+					</Test>
+					<Test attribute="PESO" operator="=" value="4">
+						<Output decision="1" info="(31.0/12.0)"/>
+					</Test>
+				</Test>
+			</Test>
+		</Test>
+		<Test attribute="ESCOLARIDADE" operator="=" value="2">
+			<Test attribute="DIAGN_DOEN_LIMIT" operator="=" value="1">
+				<Test attribute="TRABALHA" operator="=" value="1">
+					<Output decision="1" info="(4.0)"/>
+				</Test>
+				<Test attribute="TRABALHA" operator="=" value="2">
+					<Test attribute="AMIGOS_CONFIA" operator="=" value="1">
+						<Test attribute="MEDICAMENTO_DORMIR"
+							operator="=" value="1">
+							<Output decision="2" info="(4.0/1.0)"/>
+						</Test>
+						<Test attribute="MEDICAMENTO_DORMIR"
+							operator="=" value="2">
+							<Output decision="1" info="(10.0/1.0)"/>
+						</Test>
+					</Test>
+					<Test attribute="AMIGOS_CONFIA" operator="=" value="2">
+						<Test attribute="DX_ATV_HABITUAL_SAUDE"
+							operator="=" value="1">
+							<Output decision="1" info="(4.0/1.0)"/>
+						</Test>
+						<Test attribute="DX_ATV_HABITUAL_SAUDE"
+							operator="=" value="2">
+							<Output decision="2" info="(10.0/2.0)"/>
+						</Test>
+					</Test>
+					<Test attribute="AMIGOS_CONFIA" operator="=" value="3">
+						<Output decision="1" info="(4.0/1.0)"/>
+					</Test>
+				</Test>
+			</Test>
+			<Test attribute="DIAGN_DOEN_LIMIT" operator="=" value="2">
+				<Output decision="1" info="(22.0/4.0)"/>
+			</Test>
+			<Test attribute="DIAGN_DOEN_LIMIT" operator="=" value="3">
+				<Test attribute="TELEVISAO" operator="=" value="1">
+					<Output decision="2" info="(6.0)"/>
+				</Test>
+				<Test attribute="TELEVISAO" operator="=" value="2">
+					<Test attribute="IDADE" operator="=" value="1">
+						<Test attribute="CONJUGE" operator="=" value="1">
+							<Output decision="1" info="(13.0/2.0)"/>
+						</Test>
+						<Test attribute="CONJUGE" operator="=" value="2">
+							<Test attribute="BEBIDA_ALCOOLICA"
+							 operator="=" value="1">
+							 <Output decision="1" info="(2.0)"/>
+							</Test>
+							<Test attribute="BEBIDA_ALCOOLICA"
+							 operator="=" value="2">
+							 <Output decision="2" info="(12.0/3.0)"/>
+							</Test>
+						</Test>
+					</Test>
+					<Test attribute="IDADE" operator="=" value="2">
+						<Test attribute="CONJUGE" operator="=" value="1">
+							<Output decision="2" info="(4.0/1.0)"/>
+						</Test>
+						<Test attribute="CONJUGE" operator="=" value="2">
+							<Output decision="1" info="(7.0/2.0)"/>
+						</Test>
+					</Test>
+					<Test attribute="IDADE" operator="=" value="3">
+						<Output decision="2" info="(2.0)"/>
+					</Test>
+					<Test attribute="IDADE" operator="=" value="4">
+						<Output decision="1" info="(2.0)"/>
+					</Test>
+				</Test>
+				<Test attribute="TELEVISAO" operator="=" value="3">
+					<Test attribute="PARENTES_CONFIA" operator="=" value="1">
+						<Output decision="2" info="(4.0)"/>
+					</Test>
+					<Test attribute="PARENTES_CONFIA" operator="=" value="2">
+						<Output decision="1" info="(6.0/1.0)"/>
+					</Test>
+					<Test attribute="PARENTES_CONFIA" operator="=" value="3">
+						<Output decision="1" info="(3.0/1.0)"/>
+					</Test>
+				</Test>
+			</Test>
+		</Test>
+		<Test attribute="ESCOLARIDADE" operator="=" value="3">
+			<Test attribute="TELEVISAO" operator="=" value="1">
+				<Test attribute="PESO" operator="=" value="1">
+					<Output decision="2" info="(1.0)"/>
+				</Test>
+				<Test attribute="PESO" operator="=" value="2">
+					<Output decision="1" info="(6.0/1.0)"/>
+				</Test>
+				<Test attribute="PESO" operator="=" value="3">
+					<Output decision="2" info="(3.0)"/>
+				</Test>
+				<Test attribute="PESO" operator="=" value="4">
+					<Output decision="2" info="(1.0)"/>
+				</Test>
+			</Test>
+			<Test attribute="TELEVISAO" operator="=" value="2">
+				<Output decision="1" info="(28.0/6.0)"/>
+			</Test>
+			<Test attribute="TELEVISAO" operator="=" value="3">
+				<Output decision="1" info="(13.0/3.0)"/>
+			</Test>
+		</Test>
+	</Test>
+</DecisionTree>
